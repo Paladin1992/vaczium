@@ -74,7 +74,7 @@ header .header-wrapper #menu-container #menu .menu-item a {
   top: 5px;
 }
 header .header-wrapper #menu-container #menu .menu-item a:hover {
-  border-bottom-color: #fff;
+  border-bottom-color: #dfa242;
   transition: border-bottom-color 0.4s linear;
 }
 main {
