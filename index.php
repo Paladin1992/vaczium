@@ -3,31 +3,55 @@
 <head>
     <title>Váczium Mérnöki Iroda Bt.</title>
     <meta charset="utf-8">
+    <meta name="author" content="MaGe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/site.css">
+    <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 header-wrapper">
+        <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 header-wrapper">
             <div class="logo-container">
-                <a href="index.html">
-                    <img src="images/logo.png" height="60" alt="logo" title="logo">
+                <a href="index.php">
+                    <img src="images/logo.png" height="60" alt="logo" title="Vaczium logo">
                 </a>
             </div>
         
-            <div class="menu-container" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <!-- <div class="menu-container" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                 <ul class="menu clearfix">
                     <li class="menu-item"><a href="#rolunk" tabindex="1">Rólunk</a></li>
                     <li class="menu-item"><a href="#csapatunk" tabindex="2">Csapatunk</a></li>
                     <li class="menu-item"><a href="#referenciak" tabindex="3">Referenciák</a></li>
                     <li class="menu-item"><a href="#kapcsolat" tabindex="4">Kapcsolat</a></li>
                 </ul>
-            </div>
+            </div> -->
+
+            <nav class="navbar col-sm-10 col-md-10 col-lg-10">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button id="btn-menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vac-navbar" aria-expanded="false">
+                            <span class="icon-bar bar1"></span>
+                            <span class="icon-bar bar2"></span>
+                            <span class="icon-bar bar3"></span>
+                        </button>
+                    </div>
+                
+                    <div class="collapse navbar-collapse" id="vac-navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="menu"><a href="#rolunk" tabindex="1">Rólunk</a></li>
+                            <li class="menu"><a href="#csapatunk" tabindex="2">Csapatunk</a></li>
+                            <li class="menu"><a href="#referenciak" tabindex="3">Referenciák</a></li>
+                            <li class="menu"><a href="#kapcsolat" tabindex="4">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -70,8 +94,12 @@ Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz, tö
     </div>
 
     <footer>
-        <div class="footer-info">&copy; 2019</div>
-        <!-- <div class="creator">Webdesign: MaGe</div> -->
+        <?php
+            $startYear = 2019;
+            $currentYear = date("Y");
+            echo '&copy; '.$startYear.($currentYear > $startYear ? '-'.$currentYear : '').' Minden jog fenntartva<br>';
+            echo 'Weblap: MaGe';
+        ?>
     </footer>
 
     <script type="text/javascript" src="js/script.js"></script>
