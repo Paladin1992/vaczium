@@ -1,0 +1,182 @@
+// #region [ Declaration ]
+//@blue: #406890;
+//@blue: #2d5986;
+//@blue: #205070;
+//@green: #7ad164;
+//@brown: #013243;
+//@green: #f4b350;
+//@brown: #2e1700;
+//@brown: #5c2e00;
+//@brown: #6d3f10;
+//@gray: #999999;
+//@text: #333333;
+//@bgcolor: #f3f3f3;
+//@bgcolor: #fde3a7;
+//@mustard: #dfa242;
+//@mustard: #ffcc66;
+
+@bgcolor: #fde3a7;
+//@mustard: #f4b350;
+@wood: burlywood;
+@brown: #5c2e00;
+@text: #333333;
+
+@speed: 0.3s;
+// #endregion
+
+// #region [ Structure ]
+*, *:before, *:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: @bgcolor;
+    background-image: url(../images/logo_watermark.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: @text;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    //color: @blue;
+    color: @brown;
+
+    font-weight: bold;
+
+    margin: 0 0 10px;
+}
+
+a, a:hover {
+    text-decoration: none !important;
+}
+
+header {
+    background-color: @wood;
+    box-shadow: 0px 0px 10px 3px @brown;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+    }
+
+    & .header-wrapper {
+        justify-content: flex-start;
+
+        .logo-container {
+            position: absolute;
+            //left: -140px;
+            //top: -3px;
+        }
+
+        .menu-container {
+            .menu {
+                display: flex;
+                align-items: flex-start;
+
+                padding: 0;
+
+                .menu-item {
+                    list-style: none;
+
+                    a {
+                        border-bottom: 3px solid transparent;
+                        color: @brown;
+                        display: inline-block;
+
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 20px;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+
+                        margin: 0 10px;
+                        padding: 10px;
+                        position: relative;
+                        top: 5px;
+
+                        transition:
+                            border-bottom-color @speed linear,
+                            color @speed linear;
+
+                        &:hover {
+                            border-bottom-color: @brown;
+                            color: @brown;
+
+                            transition:
+                                border-bottom-color @speed linear,
+                                color @speed linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    padding: 100px 50px 0;
+
+    section {
+        margin: 0 auto;
+        min-height: 100px;
+        width: 50%;
+    }
+}
+
+footer {
+    background-color: @brown;
+    color: @wood;
+
+    text-align: center;
+
+    height: 60px;
+    position: relative;
+
+    & .footer-info {
+        //font-size: 14px;
+
+        padding: 5px 0;
+    }
+
+    & .creator {
+        font-size: 12px;
+
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+// // #endregion
+
+// // #region [ xs ]
+// @media screen and (max-width: 767) {
+// }
+// // #endregion

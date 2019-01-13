@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #fde3a7;
+  background-image: url(../images/logo_watermark.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #333333;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: #5c2e00;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+header {
+  background-color: burlywood;
+  box-shadow: 0px 0px 10px 3px #5c2e00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+}
+header.sticky {
+  position: fixed;
+  top: 0;
+}
+header .header-wrapper {
+  justify-content: flex-start;
+}
+header .header-wrapper .logo-container {
+  position: absolute;
+}
+header .header-wrapper .menu-container .menu {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+header .header-wrapper .menu-container .menu .menu-item {
+  list-style: none;
+}
+header .header-wrapper .menu-container .menu .menu-item a {
+  border-bottom: 3px solid transparent;
+  color: #5c2e00;
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0 10px;
+  padding: 10px;
+  position: relative;
+  top: 5px;
+  transition: border-bottom-color 0.3s linear, color 0.3s linear;
+}
+header .header-wrapper .menu-container .menu .menu-item a:hover {
+  border-bottom-color: #5c2e00;
+  color: #5c2e00;
+  transition: border-bottom-color 0.3s linear, color 0.3s linear;
+}
+.main {
+  padding: 100px 50px 0;
+}
+.main section {
+  margin: 0 auto;
+  min-height: 100px;
+  width: 50%;
+}
+footer {
+  background-color: #5c2e00;
+  color: burlywood;
+  text-align: center;
+  height: 60px;
+  position: relative;
+}
+footer .footer-info {
+  padding: 5px 0;
+}
+footer .creator {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
