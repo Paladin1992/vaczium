@@ -96,3 +96,32 @@ Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz, tö
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+<!--
+    - Tervezés
+	- Építészeti tervezés
+	1995-ben két mérnök alapította betéti társaságunkat. 2013-ban a cég arculata letisztult, csak építész-tervezési és energetikai-szakértői munkák készülnek.
+
+	Építészként nem házat, hanem otthont tervezünk. Ezért házaink személyre szabottak, nincs két egyforma. A tervezés során mi – Építtető és Tervező – is kicsit megismerjük, formáljuk egymást. A folyamat közös alkotássá válik, így a létrehozott épület kedves és szerethető. Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz, több szakember közreműködésére is szükség van. Így társtervezőkkel – gépész, statikus, elektromos – működünk közre munkánk során.
+
+	A cég profilja: új családi házak tervezése, épületek felmérése, átalakítása és bővítése.
+
+	- Referencia (fotók)
+	- Partnereink (nevek elérhetőségekkel)
+- Épületenergetika és pályázatok
+	Energetikai szakértőnk 2009-ben, az országban elsők között sikeresen végezte el az energetikai szakértői tanfolyamot. Mindezt nem szükségből, hanem elhivatottságból tette.
+
+	Célunk, hogy az általunk tervezett új, illetve a hozzánk kerülő felújításra váró épületek gazdaságos, a mai kornak megfelelő energiahatékonyságúak legyenek, amelyet főleg az IGÉNY oldal csökkentésével szeretnénk elérni. Így az általunk javasolt technológiákkal az épületek bármilyen gépészeti rendszerrel, alacsony üzemeltetési költségen üzemeltethetők.
+	
+	2012 óta több energetikai pályázatban működtünk közre (Otthon melege program, KEHOP, VEKOP, GINOP, TOP pályázatok), eddig 100%-os eredményességgel.
+
+	Szakértőnk segítséget nyújt, ha épülete penészesedik, párásodik, ha nincs megelégedve a fűtés hatékonyságával, vagy fogyasztását szeretné csökkenteni.
+
+	Csapatunk tagjai között felmérő, energetikus, pályázatíró és műszaki tervező is megtalálható.
+
+	Energetikai tanúsítások, szakvélemények, pályázati anyagok: családi- és társasházak, ipari, kereskedelmi és oktatási épületek esetén.
+
+	- Referencia (fotók)
+	- Partnereink (nevek elérhetőségekkel)
+- Rólunk (fényképek elérhetőségekkel; név, végzettség, beosztás - 4-en egy sorba)
+-->
