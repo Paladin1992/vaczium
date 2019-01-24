@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Váczium Mérnöki Iroda Bt.</title>
+
     <meta charset="utf-8">
     <meta name="author" content="MaGe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +23,8 @@
                     <img src="images/logo.png" height="60" alt="logo" title="Vaczium logo">
                 </a>
             </div>
-        
-            <!-- <div class="menu-container" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                <ul class="menu clearfix">
-                    <li class="menu-item"><a href="#rolunk" tabindex="1">Rólunk</a></li>
-                    <li class="menu-item"><a href="#csapatunk" tabindex="2">Csapatunk</a></li>
-                    <li class="menu-item"><a href="#referenciak" tabindex="3">Referenciák</a></li>
-                    <li class="menu-item"><a href="#kapcsolat" tabindex="4">Kapcsolat</a></li>
-                </ul>
-            </div> -->
 
-            <nav class="navbar col-sm-10 col-md-10 col-lg-10">
+            <nav class="navbar">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button id="btn-menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vac-navbar" aria-expanded="false">
@@ -44,10 +36,9 @@
                 
                     <div class="collapse navbar-collapse" id="vac-navbar">
                         <ul class="nav navbar-nav">
-                            <li class="menu"><a href="#rolunk" tabindex="1">Rólunk</a></li>
-                            <li class="menu"><a href="#csapatunk" tabindex="2">Csapatunk</a></li>
-                            <li class="menu"><a href="#referenciak" tabindex="3">Referenciák</a></li>
-                            <li class="menu"><a href="#kapcsolat" tabindex="4">Kapcsolat</a></li>
+                            <li class="menu"><a href="#tervezes" tabindex="1">Tervezés</a></li>
+                            <li class="menu"><a href="#energetika" tabindex="2">Épületenergetika és pályázatok</a></li>
+                            <li class="menu"><a href="#rolunk" tabindex="3">Rólunk</a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,8 +47,8 @@
     </header>
 
     <div class="main">
-        <section name="rolunk">
-            <h2>Rólunk</h2>
+        <section name="tervezes">
+            <h2>Tervezés</h2>
 
             <p>1995-ben két mérnök alapította betéti társaságunkat. 2013-ban a cég arculata letisztult, csak építész-tervezési és energetikai-szakértői munkák készülnek.</p>
 
@@ -67,8 +58,8 @@ Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz, tö
             <p>A cég profilja: új családi házak tervezése, épületek felmérése, átalakítása és bővítése.</p>
         </section>
 
-        <section name="csapatunk">
-            <h2>Csapatunk</h2>
+        <section name="energetika">
+            <h2>Épületenergetika és pályázatok</h2>
 
             <p>Energetikai szakértőnk 2009-ben, az országban elsők között sikeresen végezte el az energetikai szakértői tanfolyamot. Mindezt nem szükségből, hanem elhivatottságból tette.</p>
             
@@ -88,8 +79,8 @@ Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz, tö
             <p>Energetikai tanúsítások, szakvélemények, pályázati anyagok: családi- és társasházak, ipari, kereskedelmi és oktatási épületek esetén.</p>
         </section>
 
-        <section name="kapcsolat">
-            <h2>Kapcsolat</h2>
+        <section name="rolunk">
+            <h2>Rólunk</h2>
         </section>
     </div>
 

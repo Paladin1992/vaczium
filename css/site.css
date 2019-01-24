@@ -71,7 +71,7 @@ header .header-wrapper nav {
   padding: 0;
 }
 header .header-wrapper nav .container-fluid {
-  padding: 0 12px;
+  padding: 0;
 }
 header .header-wrapper nav .navbar-header {
   height: 80px;
@@ -199,7 +199,7 @@ footer .creator {
   header nav ul li a {
     background-color: #fde3a7;
     color: #5c2e00 !important;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: 1px;
     padding: 15px 5px !important;
@@ -214,5 +214,29 @@ footer .creator {
   .main section {
     margin: 0;
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  header nav div .navbar-collapse {
+    padding: 0;
+  }
+  header nav ul li::after {
+    clear: both;
+  }
+  header nav ul li a {
+    border-bottom: 3px solid burlywood;
+    color: #5c2e00 !important;
+    font-size: 1em;
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px 5px !important;
+    transition: border-color 0.3s linear;
+  }
+  header nav ul li a:hover,
+  header nav ul li a:focus,
+  header nav ul li a:active {
+    background-color: burlywood !important;
+    border-bottom: 3px solid #5c2e00;
+    transition: border-color 0.3s linear;
   }
 }
