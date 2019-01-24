@@ -19,9 +19,7 @@
     <header>
         <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 header-wrapper">
             <div class="logo-container">
-                <a href="index.php">
-                    <img src="images/logo.png" height="60" alt="logo" title="Vaczium logo">
-                </a>
+                <img src="images/logo.png" height="60" alt="logo" title="Vaczium logo">
             </div>
 
             <nav class="navbar">

@@ -17,7 +17,7 @@
 //@mustard: #ffcc66;
 
 @lightWood: #fde3a7;
-@wood: burlywood;
+@wood: #deb887; //=burlywood
 @brown: #5c2e00;
 @text: #333333;
 
@@ -27,7 +27,7 @@
 // #region [ Structure ]
 *, *:before, *:after {
     box-sizing: border-box;
-    outline: none;
+    outline: none !important;
 }
 
 html {
@@ -76,10 +76,11 @@ header {
     -ms-flex-align: center;
     align-items: center;
 
-    padding: 0 20px;
+    //padding: 0 20px;
+    padding: 0;
     position: relative;
     width: 100%;
-    height: 80px;
+    //height: 80px;
 
     &.sticky {
         position: fixed;
@@ -94,6 +95,7 @@ header {
         justify-content: flex-start;
         position: relative;
         width: 100%;
+        //height: 80px;
 
         .logo-container {
             position: absolute;
@@ -106,12 +108,13 @@ header {
             border: none !important;
         
             margin-bottom: 0 !important;
-            padding: 0;
+            padding: 0 15px;
 
             & .container-fluid { padding: 0; }
 
             & .navbar-header {
                 height: 80px;
+                margin: 0;
                 padding: 10px 0;
                 position: relative;
             }
@@ -247,6 +250,7 @@ footer {
         & .header-wrapper {
             & .logo-container {
                 left: 0;
+                margin-left: 15px;
             }
         }
 
@@ -262,6 +266,7 @@ footer {
                     &.collapse {
                         background-color: @wood;
     
+                        margin: 0;
                         padding-bottom: 15px;
             
                         &.in {
@@ -289,20 +294,17 @@ footer {
                         margin-bottom: 0;
                     }
     
-                    & a {
-                        background-color: @lightWood;
+                    & a, & a:focus {
+                        background-color: @lightWood !important;
                         color: @brown !important;
     
-                        //font-family: @font_menu;
                         font-size: 1.2em;
-                        //font-style: italic;
-                        //font-weight: bold;
                         text-align: center;
     
                         margin-bottom: 1px;
                         padding: 15px 5px !important;
     
-                        &:hover, &:focus, &:active {
+                        &:hover {
                             background-color: @brown !important;
                             box-shadow: 1px 1px 25px 0px @brown inset;
                             color: @lightWood !important;
@@ -330,54 +332,34 @@ footer {
         nav {
             & div {
                 .navbar-collapse {
-                    // border-color: @brown !important;
-                    // border-top: none !important;
-                    // box-shadow: none !important;
-                    // overflow: hidden;
                     padding: 0;
-    
-                    &.collapsing,
-                    &.collapse {
-                        // background-color: @wood;
-    
-                        // padding-bottom: 15px;
-            
-                        &.in {
-                            // background-color: @wood;
-                            // overflow-y: hidden !important;
-                        }
-                    }
                 }
             }
         
             & ul {
-                // background-color: @brown;
-                // border-radius: 4px 0 4px 4px;
-                
-                // margin: 0 -15px !important;
-                // padding: 1px !important;
-    
                 & li {
                     &::after { clear: both; }
     
-                    & a {
-                        //background-color: @lightWood;
+                    & a, & a:focus {
+                        background-color: @wood !important;
                         border-bottom: 3px solid @wood;
                         color: @brown !important;
     
-                        //font-family: @font_menu;
                         font-size: 1em;
-                        //font-style: italic;
-                        //font-weight: bold;
                         text-align: center;
     
-                        margin: 15px 0;
-                        padding: 15px 5px !important;
+                        margin: 15px 10px 15px 0;
+                        padding: 12px 10px !important;
 
                         transition: border-color @speed linear;
     
-                        &:hover, &:focus, &:active {
-                            background-color: @wood !important;
+                        &:hover {
+                            background: #deb887 !important; /* Old browsers */
+                            background: -moz-linear-gradient(top, #deb887 0%, #fde3a7 70%) !important; /* FF3.6-15 */
+                            background: -webkit-linear-gradient(top, #deb887 0%,#fde3a7 70%) !important; /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(to bottom, #deb887 0%,#fde3a7 70%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deb887', endColorstr='#fde3a7',GradientType=0 ) !important; /* IE6-9 */
+                            
                             border-bottom: 3px solid @brown;
 
                             transition: border-color @speed linear;
