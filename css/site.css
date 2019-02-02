@@ -29,6 +29,9 @@ h2 {
   font-weight: bold;
   margin: 0 0 10px;
 }
+h3 {
+  color: #5c2e00;
+}
 a,
 a:hover {
   text-decoration: none !important;
@@ -42,7 +45,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 0 20px;
   position: relative;
   width: 100%;
 }
@@ -50,13 +53,14 @@ header.sticky {
   position: fixed;
   top: 0;
 }
-header.sticky + .main section:first-of-type {
+header.sticky + main section:first-of-type {
   padding-top: 80px;
 }
 header .header-wrapper {
-  justify-content: flex-start;
+  margin: 0 auto;
+  min-width: 600px;
   position: relative;
-  width: 100%;
+  width: 50%;
 }
 header .header-wrapper .logo-container {
   position: absolute;
@@ -66,8 +70,8 @@ header .header-wrapper .logo-container {
 header .header-wrapper nav {
   border-radius: 0 !important;
   border: none !important;
+  height: 60px;
   margin-bottom: 0 !important;
-  padding: 0 15px;
 }
 header .header-wrapper nav .container-fluid {
   padding: 0;
@@ -129,13 +133,18 @@ header .header-wrapper nav button .icon-bar.bar2 {
 header .header-wrapper nav button .icon-bar.bar3 {
   transition: background-color 0.3s linear, opacity 0.3s linear;
 }
-.main {
+main {
   padding: 25px 20px 0;
 }
-.main section {
-  margin: 0 auto;
+main section {
+  text-align: justify;
+  margin: 30px auto 0;
+  min-width: 600px;
   min-height: 100px;
   width: 50%;
+}
+main section:first-of-type {
+  margin-top: 0;
 }
 footer {
   background-color: #5c2e00;
@@ -150,6 +159,57 @@ footer .creator {
   bottom: 0;
   width: 100%;
 }
+.references {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.references .ref-image {
+  margin-bottom: 10px;
+  width: 315px;
+}
+.references .ref-image img {
+  border: 1px solid #5c2e00;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.partners .partner {
+  background-color: #deb887;
+  box-shadow: 4px 4px 10px 0px #5c2e00;
+  width: 200px;
+}
+.partners .partner img.partner-portrait {
+  border: 1px solid #5c2e00;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto 5px;
+  width: 150px;
+}
+.partners .partner .partner-info .partner-name {
+  font-weight: bold;
+  text-align: center;
+}
+.partners .partner .partner-info .partner-title {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+.partners .partner .partner-info .partner-bio {
+  font-size: 14px;
+  font-style: normal;
+  text-align: left;
+  padding: 8px;
+}
+.img-container {
+  display: inline-block;
+}
 @media screen and (max-width: 767px) {
   header {
     height: auto;
@@ -158,12 +218,19 @@ footer .creator {
   header.sticky {
     position: relative;
   }
-  header.sticky + .main section:first-of-type {
+  header.sticky + main section:first-of-type {
     padding-top: 0px;
+  }
+  header .header-wrapper {
+    min-width: 0;
+    width: 100%;
   }
   header .header-wrapper .logo-container {
     left: 0;
     margin-left: 15px;
+  }
+  header nav {
+    height: initial;
   }
   header nav div .navbar-collapse {
     border-color: #5c2e00 !important;
@@ -213,8 +280,10 @@ footer .creator {
     box-shadow: 1px 1px 25px 0px #5c2e00 inset;
     color: #fde3a7 !important;
   }
-  .main section {
+  main section {
+    text-align: left;
     margin: 0;
+    min-width: 0;
     width: 100%;
   }
 }
@@ -232,8 +301,8 @@ footer .creator {
     color: #5c2e00 !important;
     font-size: 1em;
     text-align: center;
-    margin: 15px 10px 15px 0;
-    padding: 12px 10px !important;
+    margin: 22px 10px 0px 0;
+    padding: 12px 10px 8px !important;
     transition: border-color 0.3s linear;
   }
   header nav ul li a:hover,
@@ -250,5 +319,23 @@ footer .creator {
     /* IE6-9 */
     border-bottom: 3px solid #5c2e00;
     transition: border-color 0.3s linear;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header .header-wrapper {
+    width: auto;
+    height: 140px;
+  }
+  header .header-wrapper .logo-container {
+    position: static;
+  }
+  header .header-wrapper .logo-container img {
+    display: block;
+    margin: 12px auto 0;
+    transform: scale(1.2);
+  }
+  header nav ul li a,
+  header nav ul li a:focus {
+    margin: 15px 10px 0px 0;
   }
 }

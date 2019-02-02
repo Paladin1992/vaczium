@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 header-wrapper">
+        <div class="header-wrapper">
             <div class="logo-container">
                 <img src="images/logo.png" height="60" alt="logo" title="Vaczium logo">
             </div>
@@ -44,16 +44,88 @@
         </div>
     </header>
 
-    <div class="main">
+    <main>
         <section name="tervezes">
             <h2>Tervezés</h2>
 
-            <p>1995-ben két mérnök alapította betéti társaságunkat. 2013-ban a cég arculata letisztult, csak építész-tervezési és energetikai-szakértői munkák készülnek.</p>
+            <h3>Építészeti tervezés</h3>
 
-            <p>Építészként nem házat, hanem otthont tervezünk. Ezért házaink személyre szabottak, nincs két egyforma. A tervezés során mi &ndash; Építtető és Tervező &ndash; is kicsit megismerjük, formáljuk egymást. A folyamat közös alkotássá válik, így a létrehozott épület kedves és szerethető.
-Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz, több szakember közreműködésére is szükség van. Így társtervezőkkel &ndash; gépész, statikus, elektromos &ndash; működünk közre munkánk során.</p>
-            
-            <p>A cég profilja: új családi házak tervezése, épületek felmérése, átalakítása és bővítése.</p>
+            <p>
+                1995-ben két mérnök alapította betéti társaságunkat.
+                2013-ban a cég arculata letisztult,
+                csak építész-tervezési és energetikai-szakértői munkák készülnek.
+            </p>
+
+            <p>
+                Építészként nem házat, hanem otthont tervezünk.
+                Ezért házaink személyre szabottak, nincs két egyforma.
+                A tervezés során mi &ndash; Építtető és Tervező &ndash; is kicsit megismerjük, formáljuk egymást.
+                A folyamat közös alkotássá válik, így a létrehozott épület kedves és szerethető.
+                Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz,
+                több szakember közreműködésére is szükség van.
+                Így társtervezőkkel &ndash; gépész, statikus, elektromos &ndash;
+                működünk közre munkánk során.
+            </p>
+        
+            <p>
+                A cég profilja: új családi házak tervezése, épületek felmérése, átalakítása és bővítése.
+            </p>
+
+            <h3>Referenciák</h3>
+            <div class="references">
+                <div class="ref-image">
+                    <img src="images/dummy-400x300-Boxes-plain.jpg">
+                </div>
+                <div class="ref-image">
+                    <img src="images/dummy-400x300-City-plain.jpg">
+                </div>
+                <div class="ref-image">
+                    <img src="images/dummy-400x300-Skyscraper-plain.jpg">
+                </div>
+                <div class="ref-image">
+                    <img src="images/dummy-400x300-Hannover-plain.jpg">
+                </div>
+            </div>
+
+            <h3>Partnereink</h3>
+            <div class="partners">
+                <div class="partner">
+                    <img class="partner-portrait" src="images/portrait_placeholder_female.jpg">
+                    <div class="partner-info">
+                        <div class="partner-name">Alma Anna</div>
+                        <div class="partner-title">Érdekfeszítő</div>
+                        <div class="partner-bio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Etiam tempor condimentum libero, ac luctus sapien malesuada id.
+                            Integer aliquam lorem ut condimentum eleifend.
+                        </div>
+                    </div>
+                </div>
+                <div class="partner">
+                    <img class="partner-portrait" src="images/portrait_placeholder_female.jpg">
+                    <div class="partner-info">
+                        <div class="partner-name">Barack Boglárka</div>
+                        <div class="partner-title">Vonalzómérnök</div>
+                        <div class="partner-bio">
+                            Sed sollicitudin dolor et nibh rutrum, ac pulvinar metus posuere.
+                            Fusce sed augue eu nisi mattis efficitur.
+                            Vestibulum non elit nec arcu molestie lacinia et quis dui.
+                        </div>
+                    </div>
+                </div>
+                <div class="partner">
+                    <img class="partner-portrait" src="images/portrait_placeholder_male.gif">
+                    <div class="partner-info">
+                        <div class="partner-name">Citrom Cecil</div>
+                        <div class="partner-title">Gödörátemelő</div>
+                        <div class="partner-bio">
+                            Donec at aliquet lorem, eu tincidunt lorem.
+                            Nullam venenatis ac eros at imperdiet.
+                            Integer bibendum, urna sit amet porta tempor, sem turpis ullamcorper nisl, in vehicula odio nisi ac ligula.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section name="energetika">
@@ -80,7 +152,7 @@ Természetesen, amíg az elképzelésből megvalósítható dokumentum lesz, tö
         <section name="rolunk">
             <h2>Rólunk</h2>
         </section>
-    </div>
+    </main>
 
     <footer>
         <?php
