@@ -1,5 +1,9 @@
 "use strict";
 
+const SCREEN_WIDTH_XS = 768;
+const OFFSET_Y = 100;
+const SCROLL_TIME_MS = 1000;
+
 $(document).ready(function() {
     // sticky header
     window.onscroll = function() {
@@ -13,7 +17,7 @@ $(document).ready(function() {
         }
     };
 
-    // menu
+    // menu button
     $('#btn-menu').on('click', function() {
         if ($('.navbar-collapse.collapse').hasClass('in')) { // open -> close
             $(this).removeClass('opened');
@@ -22,13 +26,17 @@ $(document).ready(function() {
         }
     });
 
-    $('a[href*="#"]').not('[href="#"]').on('click', function() {
+    // scroll to section
+    $('.menu a[href*="#"]').not('[href="#"]').on('click', function() {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        var offset = window.innerWidth < 768 ? 0 : 100;
+        var offset = window.innerWidth < SCREEN_WIDTH_XS ? 0 : OFFSET_Y;
+        var destination = target.offset().top - offset;
+        var distance = Math.abs(destination - window.pageYOffset);
+        var time = distance < OFFSET_Y ? SCROLL_TIME_MS / 10 : SCROLL_TIME_MS;
 
         $('html, body').animate({
-            scrollTop: target.offset().top - offset
-        }, 1000, 'linear');
+            scrollTop: destination
+        }, time, 'linear');
     });
 });
