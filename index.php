@@ -1,3 +1,4 @@
+<?php include_once("helpers.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,9 +6,10 @@
 
     <meta charset="utf-8">
     <meta name="author" content="MaGe">
+    <meta keywords="Váczium Mérnöki Iroda Bt., Váczium Bt., Váczium, Vác, mérnökiroda, épületenergetika, energetikai pályázat, energetikai tanúsítás, családi ház, társasház, Szabó Katalin, Somfai Beáta Mária, Tóth István, Bögös Csaba">
+    <meta description="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="shortcut icon" href="images/favicon2.ico">
@@ -37,6 +39,7 @@
                             <li class="menu"><a href="#tervezes" tabindex="1">Tervezés</a></li>
                             <li class="menu"><a href="#energetika" tabindex="2">Épületenergetika és pályázatok</a></li>
                             <li class="menu"><a href="#rolunk" tabindex="3">Rólunk</a></li>
+                            <li class="menu"><a href="#kapcsolat" tabindex="4">Kapcsolat</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,13 +52,7 @@
             <div class="section-content">
                 <h1>Tervezés</h1>
 
-                <h2>Építészeti tervezés</h2>
-
-                <!-- <p>
-                    1995-ben két mérnök alapította betéti társaságunkat.
-                    2013-ban a cég arculata letisztult,
-                    csak építész-tervezési és energetikai-szakértői munkák készülnek.
-                </p> -->
+                <!-- <h2>Építészeti tervezés</h2> -->
 
                 <p>
                     Építészként nem házat, hanem otthont tervezünk.
@@ -77,29 +74,7 @@
             </div>
         </section>
 
-        <section class="bg-brown">
-            <div class="section-content">
-                <h2>Referenciák</h2>
-                <div class="references">
-                    <div class="ref-image">
-                        <img src="images/referencia_csaladi_haz_800.jpg" class="landscape" alt="Kétlakásos épület Vácon">
-                        <div class="ref-image-caption">Kétlakásos épület Vácon</div>
-                    </div>
-                    <div class="ref-image">
-                        <img src="images/referencia_panelhaz_800.jpg" class="portrait" alt="Társasház Budapesten">
-                        <div class="ref-image-caption">Társasház Budapesten</div>
-                    </div>
-                    <!-- <div class="ref-image">
-                        <img src="images/dummy-400x300-Skyscraper-plain.jpg">
-                    </div>
-                    <div class="ref-image">
-                        <img src="images/dummy-400x300-Hannover-plain.jpg">
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-        <section>
+        <!-- <section>
             <div class="section-content">
                 <h2>Partnereink</h2>
                 <div class="partners">
@@ -141,7 +116,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section name="energetika">
             <div class="section-content">
@@ -149,7 +124,7 @@
 
                 <p>
                     Energetikai szakértőnk 2009-ben, az országban elsők között sikeresen végezte el
-                    az energetikai szakértői tanfolyamot. Mindezt nem szükségből, hanem elhivatottságból tette.
+                    az energetikai szakértői tanfolyamot.
                 </p>
 
 	            <p>
@@ -171,13 +146,9 @@
                     ha nincs megelégedve a fűtés hatékonyságával, vagy fogyasztását szeretné csökkenteni.
                 </p>
                 
-                <!-- <p>
-                    Csapatunk tagjai között felmérő, energetikus, pályázatíró és műszaki tervező is megtalálható.
-                </p> -->
-                
                 <p>
-                    Energetikai tanúsítások, szakvélemények, pályázati anyagok:
-                    családi- és társasházak, ipari, kereskedelmi és oktatási épületek esetén.
+                    Energetikai tanúsításokat, szakvéleményeket, pályázati anyagokat készítünk
+                    családi- és társasházak, ipari, kereskedelmi és oktatási épületekhez.
                 </p>
             </div>
         </section>
@@ -185,75 +156,14 @@
         <section class="bg-brown">
             <div class="section-content">
                 <h2>Referenciák</h2>
-                <!-- <div class="references">
-                    <div class="ref-image">
-                        <img src="images/dummy-400x300-Boxes-plain.jpg">
-                    </div>
-                    <div class="ref-image">
-                        <img src="images/dummy-400x300-City-plain.jpg">
-                    </div>
-                    <div class="ref-image">
-                        <img src="images/dummy-400x300-Skyscraper-plain.jpg">
-                    </div>
-                    <div class="ref-image">
-                        <img src="images/dummy-400x300-Hannover-plain.jpg">
-                    </div>
-                </div> -->
 
-                <div id="energeticsCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#energeticsCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#energeticsCarousel" data-slide-to="1"></li>
-                        <li data-target="#energeticsCarousel" data-slide-to="2"></li>
-                        <li data-target="#energeticsCarousel" data-slide-to="3"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="images/dummy-400x300-Boxes-plain.jpg" alt="Chania" class="carousel-image">
-                            <div class="carousel-caption-custom">
-                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <img src="images/dummy-400x300-City-plain.jpg" alt="Chania" class="carousel-image">
-                            <div class="carousel-caption-custom">
-                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <img src="images/dummy-400x300-Skyscraper-plain.jpg" alt="Flower" class="carousel-image">
-                            <div class="carousel-caption-custom">
-                                <p>Beautiful flowers in Kolymbari, Crete.</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <img src="images/dummy-400x300-Hannover-plain" alt="Flower" class="carousel-image">
-                            <div class="carousel-caption-custom">
-                                <p>Beautiful flowers in Kolymbari, Crete.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#energeticsCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Előző</span>
-                    </a>
-                    <a class="right carousel-control" href="#energeticsCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Következő</span>
-                    </a>
-                </div>
+                <?php
+                    insert_gallery('energeticsCarousel');
+                ?>
             </div>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="section-content">
                 <h2>Partnereink</h2>
                 <div class="partners">
@@ -295,7 +205,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section name="rolunk">
             <div class="section-content">
@@ -315,53 +225,76 @@
                     <div class="employee">
                         <img class="employee-portrait" src="images/portrait_placeholder_female.jpg">
                         <div class="employee-info">
-                            <div class="employee-name">Alma Anna</div>
-                            <div class="employee-title">Valamilyen PhD</div>
-                            <div class="employee-position">Érdekfeszítő</div>
+                            <div class="employee-name">Szabó Katalin</div>
+                            <!-- <div class="employee-title">Valamilyen PhD</div> -->
+                            <div class="employee-position">Ügyvezető</div>
                         </div>
                     </div>
                     <div class="employee">
                         <img class="employee-portrait" src="images/portrait_placeholder_female.jpg">
                         <div class="employee-info">
-                            <div class="employee-name">Barack Boglárka</div>
-                            <div class="employee-title">Nagyon ért hozzá</div>
-                            <div class="employee-position">Vonalzómérnök</div>
+                            <div class="employee-name">Somfai Beáta Mária</div>
+                            <div class="employee-title">Okl. építőmérnök, energetikai szakértő</div>
+                            <!-- <div class="employee-position">+36 70 335 3939</div> -->
                         </div>
                     </div>
                     <div class="employee">
                         <img class="employee-portrait" src="images/portrait_placeholder_male.gif">
                         <div class="employee-info">
-                            <div class="employee-name">Citrom Cecil</div>
-                            <div class="employee-title">Csinálja és megy neki</div>
-                            <div class="employee-position">Gödörátemelő</div>
+                            <div class="employee-name">Tóth István</div>
+                            <div class="employee-title">Pályázati tanácsadó, projektmenedzser</div>
+                            <!-- <div class="employee-position">+36 20 384 7674</div> -->
                         </div>
                     </div>
                     <div class="employee">
                         <img class="employee-portrait" src="images/portrait_placeholder_male.gif">
                         <div class="employee-info">
-                            <div class="employee-name">Dinnye Dénes</div>
-                            <div class="employee-title">OKJ oklevél</div>
-                            <div class="employee-position">Vízsimító</div>
+                            <div class="employee-name">Bögös Csaba</div>
+                            <div class="employee-title">Műszaki koordinátor</div>
+                            <!-- <div class="employee-position">+36 30 426 0607</div> -->
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section name="kapcsolat">
+            <div class="section-content">
+                <h1>Kapcsolat</h1>
+
+                <div class="contact">
+                    <div><span class="glyphicon glyphicon-home icon"></span>2600 Vác, Lomb utca 5.</div>
+                    <div><span class="glyphicon glyphicon-earphone icon"></span>+36 70 335 3939</div>
+                    <div><span class="glyphicon glyphicon-envelope icon"></span>vaczium@gmail.com</div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="gdpr">
-            <a href="other/adatvedelmi_nyilatkozat.pdf" target="_blank" class="light" title="Adatvédelmi nyilatkozat megtekintése (új lapon nyílik meg)">Adatvédelmi nyilatkozat</a>
+        <div class="section-content">
+            <div class="slogan">
+                <div class="slogan-text">„A legzöldebb energia az, amit nem használunk fel.”</div>
+                <div class="slogan-author">&mdash; Somfai Beáta Mária</div>
+            </div>
+
+            <div class="bottom-info-container">
+                <ul class="bottom-info clearfix">
+                    <li>
+                        <?php
+                            $startYear = 2019;
+                            $currentYear = date("Y");
+                            $years = $startYear.($currentYear > $startYear ? '-'.$currentYear : '');
+                            echo '&copy; '.$years.' Minden jog fenntartva';
+                        ?>
+                    </li>
+                    <li>
+                        <a href="other/adatvedelmi_nyilatkozat.pdf" target="_blank" class="light" title="Adatvédelmi nyilatkozat megtekintése (új lapon nyílik meg)">Adatvédelmi nyilatkozat</a>
+                    </li>
+                    <li>Weblap: MaGe</li>
+                </ul>
+            </div>
         </div>
-
-        <?php
-            $startYear = 2019;
-            $currentYear = date("Y");
-            $years = $startYear.($currentYear > $startYear ? '-'.$currentYear : '');
-            echo '&copy; '.$years.' Minden jog fenntartva<br>';
-        ?>
-
-        <div class="creator">Weblap: MaGe</div>
     </footer>
 
     <script type="text/javascript" src="js/script.js"></script>

@@ -1,0 +1,31 @@
+[
+    {
+        "id": "energeticsCarousel",
+        "items": [
+            {
+                "caption": "Társasház Budapesten (Faluház)",
+                "url": "images/referencia_panelhaz_800.jpg"
+            },
+            {
+                "caption": "Családi ház Vácon",
+                "url": "images/referencia_csaladi_haz_800.jpg"
+            },
+            {
+                "caption": "Boxes plain",
+                "url": "images/dummy-400x300-Boxes-plain.jpg"
+            },
+            {
+                "caption": "City plain",
+                "url": "images/dummy-400x300-City-plain.jpg"
+            },
+            {
+                "caption": "Skyscaper plain",
+                "url": "images/dummy-400x300-Skyscraper-plain.jpg"
+            },
+            {
+                "caption": "Hannover plain",
+                "url": "images/dummy-400x300-Hannover-plain.jpg"
+            }
+        ]
+    }
+]
