@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Szabó Katalin",
+        "position": "Ügyvezető",
+        "portraitUrl": "images/portrait_placeholder_female.jpg"
+    },
+    {
+        "name": "Somfai Beáta Mária",
+        "position": "Okl. építőmérnök, energetikai szakértő",
+        "portraitUrl": "images/portrait_placeholder_female.jpg"
+    },
+    {
+        "name": "Tóth István",
+        "position": "Pályázati tanácsadó, projektmenedzser",
+        "portraitUrl": "images/portrait_placeholder_male.gif"
+    },
+    {
+        "name": "Bögös Csaba",
+        "position": "Műszaki koordinátor",
+        "portraitUrl": "images/portrait_placeholder_male.gif"
+    }
+]

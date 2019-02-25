@@ -1,5 +1,6 @@
 <?php
     $gallery = json_decode(file_get_contents("gallery.json"), true);
+    $employees = json_decode(file_get_contents("employees.json"), true);
 
     function insert_gallery($gallery_id, $stop_sliding = false) {
         global $gallery;
@@ -9,7 +10,8 @@
 
         if ($i == count($gallery)) return;
 
-        $images = $gallery[$i]['items'];
+        $currentGallery = $gallery[$i];
+        $images = $currentGallery['items'];
 
         // indicators
         $indicator_items = '';
@@ -26,7 +28,7 @@
 
         for ($i = 0; $i < count($images); $i++) {
             $active = $i == 0 ? ' active' : '';
-            $url = $images[$i]['url'];
+            $url = $currentGallery['urlPrefix'].$images[$i]['url'];
             $slides .=
                 '<div class="item'.$active.'">'
                     .'<a href="'.$url.'">'
@@ -58,6 +60,30 @@
             .$controls
             .'</div>';
         
+        echo $result;
+    }
+
+    function insert_employees() {
+        global $employees;
+        $result = '';
+
+        for ($i = 0; $i < count($employees); $i++) {
+            $employee = $employees[$i];
+
+            $result .=
+                '<div class="employee-container">'
+                    .'<div class="employee">'
+                        .'<img class="employee-portrait" src="'.$employee['portraitUrl'].'" alt="'.$employee['name'].' fotója">'
+                        .'<div class="employee-info">'
+                            .'<div class="employee-name">'.$employee['name'].'</div>'
+                            .'<div class="employee-position">'.$employee['position'].'</div>'
+                        .'</div>'
+                    .'</div>'
+                .'</div>';
+        }
+
+        $result = '<div class="employees">'.$result.'</div>';
+
         echo $result;
     }
 ?>

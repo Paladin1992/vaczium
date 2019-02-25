@@ -1,30 +1,35 @@
 [
     {
         "id": "energeticsCarousel",
+        "urlPrefix": "images/gallery/",
         "items": [
             {
-                "caption": "Társasház Budapesten (Faluház)",
-                "url": "images/referencia_panelhaz_800.jpg"
+                "caption": "Családi ház (Vác)",
+                "url": "vac_csaladi_haz.jpg"
             },
             {
-                "caption": "Családi ház Vácon",
-                "url": "images/referencia_csaladi_haz_800.jpg"
+                "caption": "Családi ház (Vácduka)",
+                "url": "vacduka_csaladi_haz.jpg"
             },
             {
-                "caption": "Boxes plain",
-                "url": "images/dummy-400x300-Boxes-plain.jpg"
+                "caption": "Zárt sorú beépítés (Vác)",
+                "url": "vac_zart_soru_beepites_001.jpg"
             },
             {
-                "caption": "City plain",
-                "url": "images/dummy-400x300-City-plain.jpg"
+                "caption": "Zárt sorú beépítés (Vác)",
+                "url": "vac_zart_soru_beepites_002.jpg"
             },
             {
-                "caption": "Skyscaper plain",
-                "url": "images/dummy-400x300-Skyscraper-plain.jpg"
+                "caption": "Családi ház (Penc)",
+                "url": "penc_csaladi_haz.jpg"
             },
             {
-                "caption": "Hannover plain",
-                "url": "images/dummy-400x300-Hannover-plain.jpg"
+                "caption": "Családi ház (Rád)",
+                "url": "rad_csaladi_haz.jpg"
+            },
+            {
+                "caption": "Társasház (Budapest, \"Faluház\")",
+                "url": "budapest_panelhaz.jpg"
             }
         ]
     }

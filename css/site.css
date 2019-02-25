@@ -304,12 +304,14 @@ p {
 }
 .carousel .carousel-inner > .item a {
   display: block;
+  overflow: hidden;
 }
 .carousel .carousel-inner > .item a .carousel-image {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: 300px;
   margin: 0 auto;
 }
@@ -326,31 +328,31 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.employees .employee {
+.employees .employee-container {
+  width: 25%;
+}
+.employees .employee-container .employee {
   background-color: #deb887;
   box-shadow: 4px 4px 10px 0px #5c2e00;
   text-align: center;
+  margin: 0 auto;
   padding: 5px;
-  width: 160px;
+  width: 95%;
+  height: 100%;
 }
-.employees .employee img.employee-portrait {
+.employees .employee-container .employee img.employee-portrait {
   border: 1px solid #5c2e00;
   border-radius: 50%;
   display: block;
   margin: 10px auto 5px;
-  width: 140px;
+  width: 95%;
 }
-.employees .employee .employee-info .employee-name {
+.employees .employee-container .employee .employee-info .employee-name {
   font-weight: bold;
 }
-.employees .employee .employee-info .employee-title {
+.employees .employee-container .employee .employee-info .employee-position {
   font-size: 16px;
   font-style: italic;
-}
-.employees .employee .employee-info .employee-position {
-  font-size: 14px;
-  font-style: normal;
-  padding: 8px;
 }
 .contact {
   font-size: 24px;
@@ -449,7 +451,6 @@ p {
     color: #fde3a7 !important;
   }
   main section {
-    /*margin-bottom: 40px;*/
     min-width: 0;
     width: 100%;
   }
@@ -476,7 +477,7 @@ p {
     transform: none;
   }
   .slogan {
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
   }
 }
@@ -530,5 +531,40 @@ p {
   header nav ul li a,
   header nav ul li a:focus {
     margin: 15px 10px 0px 0;
+  }
+}
+@media screen and (max-width: 399px) {
+  .employees .employee-container {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .employees .employee-container .employee {
+    width: 100%;
+  }
+  .employees .employee-container .employee img.employee-portrait {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 699px) {
+  .employees .employee-container {
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  .employees .employee-container .employee {
+    width: 95%;
+  }
+  .employees .employee-container .employee img.employee-portrait {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .employees .employee-container {
+    width: 25%;
+  }
+  .employees .employee-container .employee {
+    width: 95%;
+  }
+  .employees .employee-container .employee img.employee-portrait {
+    width: 95%;
   }
 }

@@ -73,7 +73,6 @@ body {
     color: @text;
 
     font-family: 'Source Sans Pro', sans-serif;
-    //font-family: 'Quicksand', sans-serif;
     font-size: 18px;
 
     margin: 0;
@@ -285,13 +284,8 @@ footer {
 }
 // #endregion
 
-
 // #region [ Content ]
 h1 {
-    // background: -moz-linear-gradient(left, rgba(92,46,0,1) 25%, rgba(222,184,135,0.73) 75%,  rgba(229,229,229,0) 100%); /* FF3.6-15 */
-    // background: -webkit-linear-gradient(left, rgba(92,46,0,1) 25%, rgba(222,184,135,0.73) 75%, rgba(229,229,229,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    // background: linear-gradient(to right, rgba(92,46,0,1) 25%, rgba(222,184,135,0.73) 75%, rgba(229,229,229,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c2e00', endColorstr='#00e5e5e5',GradientType=1 ); /* IE6-9 */
     background: -moz-linear-gradient(left, rgba(92,46,0,1) 0%, rgba(140,70,0,0.8) 50%, rgba(222,184,135,0.4) 75%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(92,46,0,1) 0%,rgba(140,70,0,0.8) 50%,rgba(222,184,135,0.4) 75%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(92,46,0,1) 0%,rgba(140,70,0,0.8) 50%,rgba(222,184,135,0.4) 75%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -439,14 +433,15 @@ p { margin: 15px 0 20px; }
         & > .item {
             & a {
                 display: block;
+                overflow: hidden;
 
                 & .carousel-image {
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover; //contain
+                    background-size: cover;
 
-                    //max-height: 300px;
-                    width: 400px;
+                    max-width: 400px;
+                    width: 100%;
                     height: 300px;
                     margin: 0 auto;
                 }
@@ -471,39 +466,38 @@ p { margin: 15px 0 20px; }
     flex-wrap: wrap;
     justify-content: space-between;
 
-    & .employee {
-        background-color: @wood;
-        box-shadow: 4px 4px 10px 0px @brown;
-        
-        text-align: center;
+    & .employee-container {
+        width: 25%;
 
-        padding: 5px;
-        width: 160px;
+        & .employee {
+            background-color: @wood;
+            box-shadow: 4px 4px 10px 0px @brown;
+            
+            text-align: center;
 
-        & img.employee-portrait {
-            border: 1px solid @brown;
-            border-radius: 50%;
-            display: block;
+            margin: 0 auto;
+            padding: 5px;
+            width: 95%;
+            height: 100%;
 
-            margin: 10px auto 5px;
-            width: 140px;
-        }
+            & img.employee-portrait {
+                border: 1px solid @brown;
+                border-radius: 50%;
+                display: block;
 
-        & .employee-info {
-            & .employee-name {
-                font-weight: bold;
+                margin: 10px auto 5px;
+                width: 95%;
             }
 
-            & .employee-title {
-                font-size: 16px;
-                font-style: italic;
-            }
+            & .employee-info {
+                & .employee-name {
+                    font-weight: bold;
+                }
 
-            & .employee-position {
-                font-size: 14px;
-                font-style: normal;
-
-                padding: 8px;
+                & .employee-position {
+                    font-size: 16px;
+                    font-style: italic;
+                }
             }
         }
     }
@@ -542,12 +536,7 @@ p { margin: 15px 0 20px; }
         padding-right: 12px;
     }
 }
-
-// & .br-optional {
-//     display: none;
-// }
 // #endregion
-
 
 // #region [ xs only ]
 @media screen and (max-width: 767px) {
@@ -640,7 +629,6 @@ p { margin: 15px 0 20px; }
 
     main {
         section {
-            /*margin-bottom: 40px;*/
             min-width: 0;
             width: 100%;
         }
@@ -678,16 +666,12 @@ p { margin: 15px 0 20px; }
         transform: none;
     }
 
-    // & .br-optional {
-    //     display: inline;
-    // }
     .slogan {
-        width: 300px;
+        max-width: 300px;
         margin: 0 auto;
     }
 }
 // #endregion
-
 
 // #region [ sm, md, lg ]
 @media screen and (min-width: 768px) {
@@ -735,7 +719,6 @@ p { margin: 15px 0 20px; }
 }
 // #endregion
 
-
 // #region [ sm only ]
 @media screen and (min-width: 768px) and (max-width: 991px) {
     header {
@@ -760,6 +743,58 @@ p { margin: 15px 0 20px; }
                     & a, & a:focus {
                         margin: 15px 10px 0px 0;
                     }
+                }
+            }
+        }
+    }
+}
+// #endregion
+
+// #region [ Custom resolutions for employee cards ]
+@media screen and (max-width: 399px) {
+    .employees {
+        & .employee-container {
+            margin-bottom: 10px;
+            width: 100%;
+
+            & .employee {
+                width: 100%;
+
+                & img.employee-portrait {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+    .employees {
+        & .employee-container {
+            margin-bottom: 10px;
+            width: 50%;
+
+            & .employee {
+                width: 95%;
+
+                & img.employee-portrait {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .employees {
+        & .employee-container {
+            width: 25%;
+
+            & .employee {
+                width: 95%;
+
+                & img.employee-portrait {
+                    width: 95%;
                 }
             }
         }

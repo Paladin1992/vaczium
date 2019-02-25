@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="author" content="MaGe">
     <meta keywords="Váczium Mérnöki Iroda Bt., Váczium Bt., Váczium, Vác, mérnökiroda, épületenergetika, energetikai pályázat, energetikai tanúsítás, családi ház, társasház, Szabó Katalin, Somfai Beáta Mária, Tóth István, Bögös Csaba">
-    <meta description="">
+    <meta description="A cég profilja: új családi házak tervezése, épületek felmérése, átalakítása és bővítése. Építészként nem házat, hanem otthont tervezünk.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -74,50 +74,6 @@
             </div>
         </section>
 
-        <!-- <section>
-            <div class="section-content">
-                <h2>Partnereink</h2>
-                <div class="partners">
-                    <div class="partner">
-                        <img class="partner-portrait" src="images/portrait_placeholder_female.jpg">
-                        <div class="partner-info">
-                            <div class="partner-name">Alma Anna</div>
-                            <div class="partner-title">Érdekfeszítő</div>
-                            <div class="partner-bio">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Etiam tempor condimentum libero, ac luctus sapien malesuada id.
-                                Integer aliquam lorem ut condimentum eleifend.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="partner">
-                        <img class="partner-portrait" src="images/portrait_placeholder_female.jpg">
-                        <div class="partner-info">
-                            <div class="partner-name">Barack Boglárka</div>
-                            <div class="partner-title">Vonalzómérnök</div>
-                            <div class="partner-bio">
-                                Sed sollicitudin dolor et nibh rutrum, ac pulvinar metus posuere.
-                                Fusce sed augue eu nisi mattis efficitur.
-                                Vestibulum non elit nec arcu molestie lacinia et quis dui.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="partner">
-                        <img class="partner-portrait" src="images/portrait_placeholder_male.gif">
-                        <div class="partner-info">
-                            <div class="partner-name">Citrom Cecil</div>
-                            <div class="partner-title">Gödörátemelő</div>
-                            <div class="partner-bio">
-                                Donec at aliquet lorem, eu tincidunt lorem.
-                                Nullam venenatis ac eros at imperdiet.
-                                Integer bibendum, urna sit amet porta tempor, sem turpis ullamcorper nisl, in vehicula odio nisi ac ligula.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <section name="energetika">
             <div class="section-content">
                 <h1>Épületenergetika és pályázatok</h1>
@@ -157,9 +113,7 @@
             <div class="section-content">
                 <h2>Referenciák</h2>
 
-                <?php
-                    insert_gallery('energeticsCarousel');
-                ?>
+                <?php insert_gallery('energeticsCarousel'); ?>
             </div>
         </section>
 
@@ -217,44 +171,7 @@
                     csak építész-tervezési és energetikai-szakértői munkák készülnek.
                 </p>
 
-                <!-- <p>
-                    Csapatunk tagjai között felmérő, energetikus, pályázatíró és műszaki tervező is megtalálható.
-                </p> -->
-
-                <div class="employees">
-                    <div class="employee">
-                        <img class="employee-portrait" src="images/portrait_placeholder_female.jpg">
-                        <div class="employee-info">
-                            <div class="employee-name">Szabó Katalin</div>
-                            <!-- <div class="employee-title">Valamilyen PhD</div> -->
-                            <div class="employee-position">Ügyvezető</div>
-                        </div>
-                    </div>
-                    <div class="employee">
-                        <img class="employee-portrait" src="images/portrait_placeholder_female.jpg">
-                        <div class="employee-info">
-                            <div class="employee-name">Somfai Beáta Mária</div>
-                            <div class="employee-title">Okl. építőmérnök, energetikai szakértő</div>
-                            <!-- <div class="employee-position">+36 70 335 3939</div> -->
-                        </div>
-                    </div>
-                    <div class="employee">
-                        <img class="employee-portrait" src="images/portrait_placeholder_male.gif">
-                        <div class="employee-info">
-                            <div class="employee-name">Tóth István</div>
-                            <div class="employee-title">Pályázati tanácsadó, projektmenedzser</div>
-                            <!-- <div class="employee-position">+36 20 384 7674</div> -->
-                        </div>
-                    </div>
-                    <div class="employee">
-                        <img class="employee-portrait" src="images/portrait_placeholder_male.gif">
-                        <div class="employee-info">
-                            <div class="employee-name">Bögös Csaba</div>
-                            <div class="employee-title">Műszaki koordinátor</div>
-                            <!-- <div class="employee-position">+36 30 426 0607</div> -->
-                        </div>
-                    </div>
-                </div>
+                <?php insert_employees(); ?>
             </div>
         </section>
 
