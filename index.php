@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="author" content="MaGe">
     <meta keywords="Váczium Mérnöki Iroda Bt., Váczium Bt., Váczium, Vác, mérnökiroda, épületenergetika, energetikai pályázat, energetikai tanúsítás, családi ház, társasház, Szabó Katalin, Somfai Beáta Mária, Tóth István, Bögös Csaba">
-    <meta description="A cég profilja: új családi házak tervezése, épületek felmérése, átalakítása és bővítése. Építészként nem házat, hanem otthont tervezünk.">
+    <meta description="A cég profilja: új családi házak tervezése, épületek felmérése, átalakítása és bővítése. Energetikai tanúsításokat, szakvéleményeket, pályázati anyagokat készítünk családi- és társasházak, ipari, kereskedelmi és oktatási épületekhez.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,7 +21,7 @@
     <header>
         <div class="header-wrapper">
             <div class="logo-container">
-                <img src="images/logo.png" height="60" alt="logo" title="Vaczium logo">
+                <img src="images/logo_white.png" height="60" alt="logo" title="Váczium logo">
             </div>
 
             <nav class="navbar">
@@ -96,20 +96,24 @@
                     (Otthon melege program, KEHOP, VEKOP, GINOP, TOP pályázatok),
                     eddig 100%-os eredményességgel.
                 </p>
-
-                <p>
-                    Szakértőnk segítséget nyújt, ha épülete penészesedik, párásodik,
-                    ha nincs megelégedve a fűtés hatékonyságával, vagy fogyasztását szeretné csökkenteni.
-                </p>
                 
+                Szakértőnk segítséget nyújt, ha
+                <ul>
+                    <li>épülete <strong>penészesedik</strong>, <strong>párásodik</strong></li>
+                    <li>nincs megelégedve a <strong>fűtés hatékonyság</strong>ával,</li>
+                    <li>vagy <strong>fogyasztását szeretné csökkenteni</strong>.</li>
+                </ul>
+                                
                 <p>
-                    Energetikai tanúsításokat, szakvéleményeket, pályázati anyagokat készítünk
+                    <strong>Energetikai tanúsításokat</strong>,
+                    <strong>szakvéleményeket</strong>,
+                    <strong>pályázati anyagokat</strong> készítünk
                     családi- és társasházak, ipari, kereskedelmi és oktatási épületekhez.
                 </p>
             </div>
         </section>
 
-        <section class="bg-brown">
+        <section class="bg-deep">
             <div class="section-content">
                 <h2>Referenciák</h2>
 
@@ -180,9 +184,24 @@
                 <h1>Kapcsolat</h1>
 
                 <div class="contact">
-                    <div><span class="glyphicon glyphicon-home icon"></span>2600 Vác, Lomb utca 5.</div>
-                    <div><span class="glyphicon glyphicon-earphone icon"></span>+36 70 335 3939</div>
-                    <div><span class="glyphicon glyphicon-envelope icon"></span>vaczium@gmail.com</div>
+                    <div>
+                        <div class="contact-icon-container">
+                            <div class="glyphicon glyphicon-home contact-icon address"></div>
+                        </div>
+                        <div class="contact-text">2600 Vác, Lomb utca 5.</div>
+                    </div>
+                    <div>
+                        <div class="contact-icon-container">
+                            <div class="glyphicon glyphicon-earphone contact-icon phone"></div>
+                        </div>
+                        <div class="contact-text">+36 70 335 3939</div>
+                    </div>
+                    <div>
+                        <div class="contact-icon-container">
+                            <div class="glyphicon glyphicon-envelope contact-icon email"></div>
+                        </div>
+                        <div class="contact-text">vaczium@gmail.com</div>
+                    </div>
                 </div>
             </div>
         </section>

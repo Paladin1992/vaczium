@@ -26,8 +26,8 @@ html {
 }
 body {
   background-attachment: fixed;
-  background-color: #fde3a7;
-  background-image: url(../images/logo_watermark.png);
+  background-color: #ffff99;
+  background-image: url(../images/logo_green_watermark.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -41,8 +41,8 @@ body {
   height: 100%;
 }
 header {
-  background-color: #deb887;
-  box-shadow: 0px 0px 10px 3px #5c2e00;
+  background-color: #006600;
+  box-shadow: 0px 0px 10px 2px #222222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,8 +88,8 @@ header .header-wrapper nav .navbar-header {
   position: relative;
 }
 header .header-wrapper nav button {
-  background-color: #5c2e00 !important;
-  border-color: #5c2e00 !important;
+  background-color: #006600 !important;
+  border-color: #006600 !important;
   border-radius: 4px !important;
   margin-right: 0 !important;
   padding-bottom: 9px;
@@ -99,13 +99,13 @@ header .header-wrapper nav button {
   transition: background-color 0.3s linear, border-radius 0.3s linear, padding-bottom 0.3s linear;
 }
 header .header-wrapper nav button.opened {
-  background-color: #fde3a7 !important;
+  background-color: #f6fff6 !important;
   border-radius: 4px 4px 0 0 !important;
   padding-bottom: 35px;
   transition: background-color 0.3s linear, border-radius 0.3s linear, padding-bottom 0.3s linear;
 }
 header .header-wrapper nav button.opened .icon-bar {
-  background-color: #5c2e00 !important;
+  background-color: #006600 !important;
   position: relative;
   transition: background-color 0.3s linear;
 }
@@ -119,12 +119,12 @@ header .header-wrapper nav button.opened .icon-bar.bar2 {
   transition: transform 0.3s linear;
 }
 header .header-wrapper nav button.opened .icon-bar.bar3 {
-  background-color: #fde3a7 !important;
+  background-color: #f6fff6 !important;
   opacity: 0;
   transition: background-color 0.3s linear, opacity 0.3s linear;
 }
 header .header-wrapper nav button .icon-bar {
-  background-color: #fde3a7 !important;
+  background-color: #f6fff6 !important;
   display: block;
   position: relative;
   transition: background-color 0.3s linear;
@@ -147,9 +147,9 @@ main section {
 main section:last-of-type {
   margin-bottom: 25px;
 }
-main section.bg-brown {
-  background-color: #5c2e00;
-  box-shadow: 0px 10px 10px -5px #331a00 inset, 0px -10px 10px -5px #331a00 inset;
+main section.bg-deep {
+  background-color: #004000;
+  box-shadow: 0px 10px 10px -5px #222222 inset, 0px -10px 10px -5px #222222 inset;
   padding: 10px 0 40px;
 }
 .section-content {
@@ -160,8 +160,8 @@ main section.bg-brown {
   width: 50%;
 }
 footer {
-  background-color: #5c2e00;
-  color: #deb887;
+  background-color: #006600;
+  color: #cccccc;
   font-size: 14px;
   text-align: center;
   min-height: 60px;
@@ -186,15 +186,13 @@ footer .bottom-info-container ul.bottom-info li:last-of-type {
   margin-right: 0;
 }
 h1 {
-  background: -moz-linear-gradient(left, #5c2e00 0%, rgba(140, 70, 0, 0.8) 50%, rgba(222, 184, 135, 0.4) 75%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(left, #005700 17%, rgba(0, 138, 0, 0.9) 33%, rgba(82, 177, 82, 0.8) 67%, rgba(131, 199, 131, 0.75) 83%, rgba(180, 221, 180, 0) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #5c2e00 0%, rgba(140, 70, 0, 0.8) 50%, rgba(222, 184, 135, 0.4) 75%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(left, #005700 17%, rgba(0, 138, 0, 0.9) 33%, rgba(82, 177, 82, 0.8) 67%, rgba(131, 199, 131, 0.75) 83%, rgba(180, 221, 180, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #5c2e00 0%, rgba(140, 70, 0, 0.8) 50%, rgba(222, 184, 135, 0.4) 75%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, #005700 17%, rgba(0, 138, 0, 0.9) 33%, rgba(82, 177, 82, 0.8) 67%, rgba(131, 199, 131, 0.75) 83%, rgba(180, 221, 180, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c2e00', endColorstr='#00ffffff', GradientType=1);
-  /* IE6-9 */
-  color: white;
+  color: #ffffff;
   font-size: 28px;
   font-style: italic;
   text-align: left;
@@ -208,11 +206,11 @@ section:first-of-type h1 {
   margin-top: 0;
 }
 h2 {
-  color: #5c2e00;
+  color: #006600;
   font-size: 24px;
 }
-.bg-brown h2 {
-  color: white;
+.bg-deep h2 {
+  color: #ffffff;
   margin-top: 0;
 }
 a {
@@ -222,52 +220,20 @@ a:hover {
   text-decoration: none !important;
 }
 a.light {
-  color: white;
+  color: #ffffff;
 }
 a.light:hover {
   text-decoration: underline !important;
 }
 a.dark {
-  color: #5c2e00;
+  color: #006600;
 }
 a.dark:hover {
-  color: #331a00;
+  color: #004000;
   text-decoration: underline !important;
 }
 p {
   margin: 15px 0 20px;
-}
-.partners {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.partners .partner {
-  background-color: #deb887;
-  box-shadow: 4px 4px 10px 0px #5c2e00;
-  width: 200px;
-}
-.partners .partner img.partner-portrait {
-  border: 1px solid #5c2e00;
-  border-radius: 50%;
-  display: block;
-  margin: 10px auto 5px;
-  width: 150px;
-}
-.partners .partner .partner-info .partner-name {
-  font-weight: bold;
-  text-align: center;
-}
-.partners .partner .partner-info .partner-title {
-  font-size: 16px;
-  font-style: italic;
-  text-align: center;
-}
-.partners .partner .partner-info .partner-bio {
-  font-size: 14px;
-  font-style: normal;
-  text-align: left;
-  padding: 8px;
 }
 .references {
   display: flex;
@@ -280,12 +246,12 @@ p {
   height: 100%;
 }
 .references .ref-image img {
-  border: 1px solid #fde3a7;
+  border: 1px solid #f6fff6;
   display: block;
   height: 100%;
 }
 .references .ref-image-caption {
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   text-align: center;
 }
@@ -316,7 +282,7 @@ p {
   margin: 0 auto;
 }
 .carousel .carousel-inner > .item .carousel-caption-custom {
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   text-align: center;
   margin: 3px 0 -3px;
@@ -332,40 +298,57 @@ p {
   width: 25%;
 }
 .employees .employee-container .employee {
-  background-color: #deb887;
-  box-shadow: 4px 4px 10px 0px #5c2e00;
+  color: #333333;
   text-align: center;
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px 5px;
   width: 95%;
   height: 100%;
 }
 .employees .employee-container .employee img.employee-portrait {
-  border: 1px solid #5c2e00;
+  border: 2px solid #006600;
   border-radius: 50%;
   display: block;
-  margin: 10px auto 5px;
+  margin: 0 auto 5px;
   width: 95%;
 }
 .employees .employee-container .employee .employee-info .employee-name {
   font-weight: bold;
 }
 .employees .employee-container .employee .employee-info .employee-position {
+  color: #333333;
   font-size: 16px;
   font-style: italic;
+  line-height: 1.25;
 }
 .contact {
   font-size: 24px;
 }
-.contact div {
+.contact > div {
   margin-top: 20px;
 }
-.contact .icon {
-  color: #5c2e00;
+.contact .contact-icon-container {
+  display: table-cell;
+}
+.contact .contact-icon-container .contact-icon {
+  color: #006600;
   margin-right: 16px;
+  position: relative;
+}
+.contact .contact-icon-container .contact-icon.address {
+  top: 2px;
+}
+.contact .contact-icon-container .contact-icon.phone {
+  top: 4px;
+}
+.contact .contact-icon-container .contact-icon.email {
+  top: 5px;
+}
+.contact .contact-text {
+  display: table-cell;
 }
 .slogan .slogan-text {
-  color: white;
+  color: #ffffff;
   font-family: 'Cormorant Upright', cursive;
   font-size: 24px;
   font-style: italic;
@@ -403,24 +386,24 @@ p {
     height: initial;
   }
   header .header-wrapper nav div .navbar-collapse {
-    border-color: #5c2e00 !important;
+    border-color: #006600 !important;
     border-top: none !important;
     box-shadow: none !important;
     overflow: hidden;
   }
   header .header-wrapper nav div .navbar-collapse.collapsing,
   header .header-wrapper nav div .navbar-collapse.collapse {
-    background-color: #deb887;
+    background-color: #006600;
     margin: 0;
     padding-bottom: 15px;
   }
   header .header-wrapper nav div .navbar-collapse.collapsing.in,
   header .header-wrapper nav div .navbar-collapse.collapse.in {
-    background-color: #deb887;
+    background-color: #006600;
     overflow-y: hidden !important;
   }
   header .header-wrapper nav ul {
-    background-color: #5c2e00;
+    background-color: #006600;
     border-radius: 4px 0 4px 4px;
     margin: 0 -15px !important;
     padding: 1px !important;
@@ -437,8 +420,8 @@ p {
   }
   header .header-wrapper nav ul li a,
   header .header-wrapper nav ul li a:focus {
-    background-color: #fde3a7 !important;
-    color: #5c2e00 !important;
+    background-color: #f6fff6 !important;
+    color: #006600 !important;
     font-size: 1.2em;
     text-align: center;
     margin-bottom: 1px;
@@ -446,9 +429,9 @@ p {
   }
   header .header-wrapper nav ul li a:hover,
   header .header-wrapper nav ul li a:focus:hover {
-    background-color: #5c2e00 !important;
-    box-shadow: 1px 1px 25px 0px #5c2e00 inset;
-    color: #fde3a7 !important;
+    background-color: #008a00 !important;
+    box-shadow: 1px 1px 25px 0px #ffffff inset;
+    color: #f6fff6 !important;
   }
   main section {
     min-width: 0;
@@ -470,7 +453,7 @@ p {
   }
   h1 {
     background: none;
-    background-color: #5c2e00;
+    background-color: #006600;
     font-style: normal;
     left: 0;
     margin: 0 -20px;
@@ -490,9 +473,9 @@ p {
   }
   header nav ul li a,
   header nav ul li a:focus {
-    background-color: #deb887 !important;
-    border-bottom: 3px solid #deb887;
-    color: #5c2e00 !important;
+    background-color: transparent !important;
+    border-bottom: 3px solid #006600;
+    color: #ffffff !important;
     font-size: 1.1em;
     text-align: center;
     margin: 22px 10px 0px 0;
@@ -501,17 +484,14 @@ p {
   }
   header nav ul li a:hover,
   header nav ul li a:focus:hover {
-    background: #deb887 !important;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #deb887 0%, #fde3a7 70%) !important;
+    background: transparent;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(82, 177, 82, 0.35) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #deb887 0%, #fde3a7 70%) !important;
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(82, 177, 82, 0.35) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #deb887 0%, #fde3a7 70%) !important;
+    background: linear-gradient(to bottom, transparent 0%, rgba(82, 177, 82, 0.35) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#deb887', endColorstr='#fde3a7', GradientType=0) !important;
-    /* IE6-9 */
-    border-bottom: 3px solid #5c2e00;
+    border-bottom: 3px solid #ffffff;
     transition: border-color 0.3s linear;
   }
 }
