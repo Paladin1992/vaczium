@@ -77,6 +77,7 @@
                         .'<div class="employee-info">'
                             .'<div class="employee-name">'.$employee['name'].'</div>'
                             .'<div class="employee-position">'.$employee['position'].'</div>'
+                            .($i < count($employees) - 1 ? '<div class="employee-separator"></div>' : '')
                         .'</div>'
                     .'</div>'
                 .'</div>';
