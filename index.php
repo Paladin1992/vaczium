@@ -105,9 +105,7 @@
                 </ul>
                                 
                 <p>
-                    <strong>Energetikai tanúsításokat</strong>,
-                    <strong>szakvéleményeket</strong>,
-                    <strong>pályázati anyagokat</strong> készítünk
+                    <strong>Energetikai tanúsításokat, szakvéleményeket, pályázati anyagokat készítünk</strong>
                     családi- és társasházak, ipari, kereskedelmi és oktatási épületekhez.
                 </p>
             </div>
@@ -210,8 +208,10 @@
     <footer>
         <div class="section-content">
             <div class="slogan">
-                <div class="slogan-text">„A legzöldebb energia az, amit nem használunk fel.”</div>
-                <div class="slogan-author">&mdash; Somfai Beáta Mária</div>
+                <!-- <div class="slogan-text">„A legzöldebb energia az, amit nem használunk fel.”</div>
+                <div class="slogan-author">&mdash; Somfai Beáta Mária</div> -->
+                <div class="slogan-text">A legzöldebb energia az, amit nem használunk fel.</div>
+                <div class="slogan-author"></div>
             </div>
 
             <div class="bottom-info-container">

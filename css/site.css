@@ -25,12 +25,7 @@ html {
   height: 100%;
 }
 body {
-  background-attachment: fixed;
-  background-color: #ffff99;
-  background-image: url(../images/logo_green_watermark.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  background-color: #fde3a7;
   color: #333333;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
@@ -172,11 +167,15 @@ footer .bottom-info-container {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  position: relative;
+  height: 50px;
 }
 footer .bottom-info-container ul.bottom-info {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: absolute;
+  bottom: 0;
 }
 footer .bottom-info-container ul.bottom-info li {
   float: left;
@@ -356,11 +355,6 @@ p {
   letter-spacing: 1px;
   text-align: center;
 }
-.slogan .slogan-author {
-  text-align: right;
-  margin-bottom: 10px;
-  padding-right: 12px;
-}
 @media screen and (max-width: 767px) {
   header {
     height: auto;
@@ -447,6 +441,9 @@ p {
     display: block;
     text-align: center;
   }
+  footer .bottom-info-container ul.bottom-info {
+    position: relative;
+  }
   footer .bottom-info-container ul.bottom-info li {
     float: none;
     margin-right: 0;
@@ -461,7 +458,7 @@ p {
   }
   .slogan {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 }
 @media screen and (min-width: 768px) {
